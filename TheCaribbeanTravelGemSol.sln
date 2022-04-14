@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCaribbeanTravelGem", "TheCaribbeanTravelGem\TheCaribbeanTravelGem.csproj", "{B70BB7A6-B1D8-4FF8-9886-AC234BB60A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTGLibrary", "TCTGLibrary\TCTGLibrary.csproj", "{882BABAD-7BAF-4A6C-9538-CFCBD095B772}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B70BB7A6-B1D8-4FF8-9886-AC234BB60A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70BB7A6-B1D8-4FF8-9886-AC234BB60A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70BB7A6-B1D8-4FF8-9886-AC234BB60A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70BB7A6-B1D8-4FF8-9886-AC234BB60A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882BABAD-7BAF-4A6C-9538-CFCBD095B772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882BABAD-7BAF-4A6C-9538-CFCBD095B772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882BABAD-7BAF-4A6C-9538-CFCBD095B772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882BABAD-7BAF-4A6C-9538-CFCBD095B772}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A866E4A-1C4F-406C-AE9B-053C3CF93360}
+	EndGlobalSection
+EndGlobal

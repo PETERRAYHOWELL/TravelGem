@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B70BB7A6-B1D8-4FF8-9886-AC234BB60A3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TheCaribbeanTravelGem</RootNamespace>
+    <AssemblyName>TheCaribbeanTravelGem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomControl">
+      <HintPath>..\..\..\..\..\source\repos\source of custom tools\CustomControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminPortal.Designer.cs">
+      <DependentUpon>FrmAdminPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientPortal.Designer.cs">
+      <DependentUpon>FrmClientPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfile.Designer.cs">
+      <DependentUpon>FrmProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransBooking.Designer.cs">
+      <DependentUpon>FrmTransBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClubKingston.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClubKingston.Designer.cs">
+      <DependentUpon>FrmClubKingston.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFrequentlyAsked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFrequentlyAsked.Designer.cs">
+      <DependentUpon>FrmFrequentlyAsked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKnutsfordExpress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKnutsfordExpress.Designer.cs">
+      <DependentUpon>FrmKnutsfordExpress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransListing.Designer.cs">
+      <DependentUpon>FrmTransListing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransPayment.Designer.cs">
+      <DependentUpon>FrmTransPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuestion.Designer.cs">
+      <DependentUpon>FrmQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScheduleAndFares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScheduleAndFares.Designer.cs">
+      <DependentUpon>FrmScheduleAndFares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignUp.Designer.cs">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransportation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransportation.Designer.cs">
+      <DependentUpon>FrmTransportation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdiMain.Designer.cs">
+      <DependentUpon>MdiMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminPortal.resx">
+      <DependentUpon>FrmAdminPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransBooking.resx">
+      <DependentUpon>FrmTransBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientPortal.resx">
+      <DependentUpon>FrmClientPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClubKingston.resx">
+      <DependentUpon>FrmClubKingston.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFrequentlyAsked.resx">
+      <DependentUpon>FrmFrequentlyAsked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKnutsfordExpress.resx">
+      <DependentUpon>FrmKnutsfordExpress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransListing.resx">
+      <DependentUpon>FrmTransListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransPayment.resx">
+      <DependentUpon>FrmTransPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuestion.resx">
+      <DependentUpon>FrmQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScheduleAndFares.resx">
+      <DependentUpon>FrmScheduleAndFares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignUp.resx">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransportation.resx">
+      <DependentUpon>FrmTransportation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MdiMain.resx">
+      <DependentUpon>MdiMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haniel-espinal-h3hO4wLviRU-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-asad-photo-maldives-3155666.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-3822155.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Caribbean Travel Gem Logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewel-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewel-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jewel-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\julian-b-solter-MUG9PUlGmCk-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach-holiday-vacation-caribbean.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cedric-frixon-Me7ySkVmWcw-unsplash %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-11423491.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club kingston.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club mobay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knutsford bus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loose Cannon Boat Charters And Tours Limited.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Martha Brae River Rafting Private Tour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Royal Jamaica Yacht Club1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pryce taxi and tours.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ontime Taxi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr. bill on the beach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\island-life-tours-jamaica2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JoeCoolCoasterSangsterSliderPhoto_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dunns-river- shuttle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ultimate-excursions-tours.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TCTGLibrary\TCTGLibrary.csproj">
+      <Project>{882babad-7baf-4a6c-9538-cfcbd095b772}</Project>
+      <Name>TCTGLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knutsfordexpressmontegobay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knutsfordcharters.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knutsfordexpressochorios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courier-web-advt-610_354.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filter-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filter-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club kingston2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club kingston3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clubkingston.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrance-to-club-kingston-highres.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vertical-line-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vertical-line-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-2344530.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-question-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-question-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ask-question-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ask-question-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-3703511.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-3703511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subtract-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subtract-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-window-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-window-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-30-Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-30-Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-party-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-schedule-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-beach-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-menu-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empty-bed-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transportation-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-survey-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subtract-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-window-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\to add to home page a bamboo raft on the rio-grande-river.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
